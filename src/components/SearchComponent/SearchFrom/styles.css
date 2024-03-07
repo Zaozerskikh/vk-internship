@@ -1,13 +1,10 @@
 .searchForm {
     display: flex;
     justify-content: center;
-    padding: 20px;
-  }
-
-.searchForm form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding-bottom: 12px;
+    gap: 8px;
+    width: 100%;
+    max-width: 400px;
 }
   
 .searchForm input {
@@ -17,7 +14,7 @@
 }
 
 .searchForm input[type="text"] {
-    width: 300px;
+    width: 100%;
 }
   
 .searchForm input[type="submit"] {

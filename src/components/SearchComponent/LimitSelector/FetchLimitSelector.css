@@ -1,0 +1,19 @@
+.fetch-limit-selector-wrapper {
+    display: flex;
+    height: 37px;
+    gap: 8px;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+
+.fetch-limit-selector-wrapper .info-text {
+    color: rgb(92, 93, 94);
+}
+
+.fetch-limit-selector-wrapper .fetch-limit-selector {
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding-left: 4px;
+    height: 37px;
+}

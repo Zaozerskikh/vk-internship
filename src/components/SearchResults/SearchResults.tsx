@@ -1,16 +1,18 @@
-import { useContext } from "react";
-import { SearchContext } from "./SearchContext";
 import { UserCard } from "../UserCard/UserCard";
 
 import "./style.css";
+import React from "react";
+import {UserInfo} from "../../types/UserInfo.ts";
 
-export function SearchResults() {
-  const { users } = useContext(SearchContext);
+interface SearchResultsProps {
+  results: UserInfo[];
+}
 
+export const SearchResults: React.FC<SearchResultsProps> = ({ results }) => {
   return (
     <div className="usersList">
-      {users.map((user) => (
-        <UserCard {...user} />
+      {results.map((user) => (
+        <UserCard {...user} key={user.id}/>
       ))}
     </div>
   );
